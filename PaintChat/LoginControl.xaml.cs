@@ -18,11 +18,18 @@ namespace PaintChat
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class LoginControl : Window
+    public partial class LoginControl : UserControl
     {
-        public LoginControl()
+        private ChatWindow m_mainWindow;
+        public LoginControl(ChatWindow mainWindow)
         {
+            m_mainWindow = mainWindow;
             InitializeComponent();
+        }
+
+        private void buttonPanel_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

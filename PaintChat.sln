@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintChat", "PaintChat\PaintChat.csproj", "{42A63084-6B7E-4F19-9E70-0D2BA7305397}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatInterfaces1", "ChatInterfaces1\ChatInterfaces1.csproj", "{9F976B6E-0092-4D12-96D2-476862215E21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatObjects", "ChatObjects\ChatObjects.csproj", "{CD4F790F-1813-46D5-A83D-F54AE1ED1021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{42A63084-6B7E-4F19-9E70-0D2BA7305397}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42A63084-6B7E-4F19-9E70-0D2BA7305397}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42A63084-6B7E-4F19-9E70-0D2BA7305397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F976B6E-0092-4D12-96D2-476862215E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F976B6E-0092-4D12-96D2-476862215E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F976B6E-0092-4D12-96D2-476862215E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F976B6E-0092-4D12-96D2-476862215E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD4F790F-1813-46D5-A83D-F54AE1ED1021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4F790F-1813-46D5-A83D-F54AE1ED1021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4F790F-1813-46D5-A83D-F54AE1ED1021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4F790F-1813-46D5-A83D-F54AE1ED1021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

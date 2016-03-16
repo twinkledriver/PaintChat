@@ -53,6 +53,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ChatWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoginControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -60,6 +64,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CallManager.cs" />
+    <Compile Include="ChatClient\ChatClient.cs" />
+    <Compile Include="ChatWindow.xaml.cs">
+      <DependentUpon>ChatWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginControl.xaml.cs">
       <DependentUpon>LoginControl.xaml</DependentUpon>
@@ -92,6 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChatInterfaces1\ChatInterfaces1.csproj">
+      <Project>{9f976b6e-0092-4d12-96d2-476862215e21}</Project>
+      <Name>ChatInterfaces1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

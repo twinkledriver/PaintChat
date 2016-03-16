@@ -1,13 +1,11 @@
-d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\bin\Debug\PaintChat.exe.config
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\PaintChat.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\ChatWindow.baml
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\LoginControl.baml
+d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\ChatWindow.g.cs
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\LoginControl.g.cs
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\App.g.cs
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\PaintChat_MarkupCompile.cache
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\PaintChat.g.resources
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\PaintChat.Properties.Resources.resources
 d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\PaintChat.csproj.GenerateResource.Cache
-d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\bin\Debug\PaintChat.exe
-d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\bin\Debug\PaintChat.pdb
-d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\PaintChat.exe
-d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\obj\Debug\PaintChat.pdb
+d:\documents\visual studio 2012\Projects\PaintChat\PaintChat\bin\Debug\PaintChat.exe.config

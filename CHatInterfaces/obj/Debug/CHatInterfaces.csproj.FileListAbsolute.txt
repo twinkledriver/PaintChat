@@ -1,0 +1,6 @@
+d:\documents\visual studio 2012\Projects\PaintChat\CHatInterfaces\bin\Debug\CHatInterfaces.exe.config
+d:\documents\visual studio 2012\Projects\PaintChat\CHatInterfaces\bin\Debug\CHatInterfaces.exe
+d:\documents\visual studio 2012\Projects\PaintChat\CHatInterfaces\bin\Debug\CHatInterfaces.pdb
+d:\documents\visual studio 2012\Projects\PaintChat\CHatInterfaces\obj\Debug\CHatInterfaces.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\PaintChat\CHatInterfaces\obj\Debug\CHatInterfaces.exe
+d:\documents\visual studio 2012\Projects\PaintChat\CHatInterfaces\obj\Debug\CHatInterfaces.pdb

@@ -1,0 +1,1 @@
+d:\documents\visual studio 2012\Projects\PaintChat\ChatObjects\obj\Debug\ChatObjects.csprojResolveAssemblyReference.cache
