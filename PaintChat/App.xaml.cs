@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Threading;
 
 namespace PaintChat
 {
@@ -13,5 +14,19 @@ namespace PaintChat
     /// </summary>
     public partial class App : Application
     {
+        public static bool s_IsServer = false;
+        protected override void OnStartup(StartupEventArgs e)
+        {
+        }
+
+        public static bool s_bShutDownServerThread = false;
+        private static System.Threading.Thread s_serverThread;
+        public static void StartServer()
+        {
+            s_bShutDownServerThread = false;
+            s_serverThread=new Thread(new ThreadStart(ChatServiceClient.Run));
+        }
+
+
     }
 }

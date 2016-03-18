@@ -70,6 +70,7 @@
     <Compile Include="CallManager.cs" />
     <Compile Include="ChatClient\ChatClient.cs" />
     <Compile Include="ChatClient\ChatClientOverride.cs" />
+    <Compile Include="ChatServerThread.cs" />
     <Compile Include="ChatWindow.xaml.cs">
       <DependentUpon>ChatWindow.xaml</DependentUpon>
     </Compile>
