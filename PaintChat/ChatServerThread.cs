@@ -28,12 +28,12 @@ namespace PaintChat
             }
             catch (System.Threading.ThreadAbortException abortEx)
             {
-                System.Diagnostics.Trace.WriteLine("ZqlChartServer ThreadAbortException: {0}", abortEx.Message.ToString());
+                System.Diagnostics.Trace.WriteLine("ChatServer ThreadAbortException: {0}", abortEx.Message.ToString());
                 host.Close();
             }
             catch (System.Exception ex)
             {
-                System.Diagnostics.Trace.WriteLine("ZqlChartServer exception: {0}", ex.Message.ToString());
+                System.Diagnostics.Trace.WriteLine("ChatServer exception: {0}", ex.Message.ToString());
             }
             host=null;
         }

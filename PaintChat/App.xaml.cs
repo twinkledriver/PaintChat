@@ -24,9 +24,18 @@ namespace PaintChat
         public static void StartServer()
         {
             s_bShutDownServerThread = false;
-            s_serverThread=new Thread(new ThreadStart(ChatServiceClient.Run));
+            s_serverThread = new Thread(new ThreadStart(ChatServerThread.Run));
+            s_serverThread.Start();
         }
 
+        public static void StopServer()
+        {
+            s_bShutDownServerThread = true;
+            if (s_serverThread != null)
+            {
+                s_serverThread.Join(1000);
+            }
+        }
 
     }
 }

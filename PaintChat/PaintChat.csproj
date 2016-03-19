@@ -115,6 +115,14 @@
       <Project>{cd4f790f-1813-46d5-a83d-f54ae1ed1021}</Project>
       <Name>ChatObjects</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ChatServer\ChatServer.csproj">
+      <Project>{4d4e1863-7020-4739-b244-0aecab7614ac}</Project>
+      <Name>ChatServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ColorPickerLib\ColorPicker.csproj">
+      <Project>{99e90579-62fc-4898-b168-24f7dbd3a34d}</Project>
+      <Name>ColorPicker</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

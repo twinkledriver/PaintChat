@@ -114,7 +114,7 @@ namespace PaintChat {
         
         #line 25 "..\..\LoginControl.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txtUserNAme;
+        internal System.Windows.Controls.TextBox txtUserName;
         
         #line default
         #line hidden
@@ -221,7 +221,7 @@ namespace PaintChat {
             this.lblUserName = ((System.Windows.Controls.Label)(target));
             return;
             case 11:
-            this.txtUserNAme = ((System.Windows.Controls.TextBox)(target));
+            this.txtUserName = ((System.Windows.Controls.TextBox)(target));
             return;
             case 12:
             this.buttonPanel = ((System.Windows.Controls.StackPanel)(target));
