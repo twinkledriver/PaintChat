@@ -34,3 +34,15 @@ C:\Users\Administrator\Desktop\ZqlChart\ColorPickerLib\obj\Debug\Themes\generic.
 C:\Users\Administrator\Desktop\ZqlChart\ColorPickerLib\obj\Debug\ColorPicker.g.resources
 C:\Users\Administrator\Desktop\ZqlChart\ColorPickerLib\obj\Debug\ColorPicker.dll
 C:\Users\Administrator\Desktop\ZqlChart\ColorPickerLib\obj\Debug\ColorPicker.pdb
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\bin\Debug\ColorPicker.dll
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\bin\Debug\ColorPicker.pdb
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPicker.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPickerDialog.g.cs
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPicker_MarkupCompile.cache
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPicker_MarkupCompile.lref
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPickerDialog.baml
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\Themes\generic.baml
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPicker.g.resources
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPicker.dll
+d:\documents\visual studio 2012\Projects\PaintChat\ColorPickerLib\obj\Debug\ColorPicker.pdb

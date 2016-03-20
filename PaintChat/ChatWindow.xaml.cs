@@ -45,7 +45,7 @@ namespace PaintChat
             base.OnClosing(e);
         }
 
-        protected void Window_Loaded(object sender, RoutedEvent e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             SignInMode();
 
@@ -79,7 +79,7 @@ namespace PaintChat
             ShowChatControls(Visibility.Visible);
         }
 
-        private void btnLeave_Click(object sender, RoutedEvent e)
+        private void btnLeave_Click(object sender, RoutedEventArgs e)
         {
             ExitChat();
             this.SignInMode();
@@ -159,6 +159,20 @@ namespace PaintChat
 
         }
 
+        public void UpdateUsersList(List<ChatObjects.ChatUser> listChatUsers)
+        {
+            IvUsers.Items.Clear();
+            foreach (ChatObjects.ChatUser chatUser in listChatUsers)
+            {
+                IvUsers.Items.Add(chatUser.NickName);
+            }
+        }
+
+        public void LastUserDraw(ChatObjects.ChatUser chatUser)
+        {
+
+        }
+
         private void OnSetFill(object sender, RoutedEventArgs e)
         {
             Microsoft.Samples.CustomControls.ColorPickerDialog cPicker = new Microsoft.Samples.CustomControls.ColorPickerDialog();
@@ -198,6 +212,10 @@ namespace PaintChat
             txtAllMessage.AppendText("我：" + txtMessage.Text + "\r\n");
             txtMessage.Text = "";
         }
+
+       
+
+       
 
 
        

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ServiceModel;
+using System.Threading;
 
 namespace PaintChat
 {
@@ -82,20 +83,55 @@ namespace PaintChat
                  }
                 try 
                 {
-                    ClientCallBack
+                    ClientCallBack.Instance = new ClientCallBack(SynchronizationContext.Current, m_mainWindow);
+                    ChatServiceClient.Instance = new ChatServiceClient
+                                                    (
+                                                        new ChatObjects.ChatUser
+                                                        (
+                                                            txtUserName.Text,
+                                                            System.Environment.UserName,
+                                                            System.Environment.MachineName,
+                                                            System.Diagnostics.Process.GetCurrentProcess().Id,
+                                                            App.s_IsServer
+                                                        ),
+                                                         new InstanceContext(ClientCallBack.Instance),
+                                                        "ChatClientTcpBinding",
+                                                        serverAddress
+                                                    );
+                    ChatServiceClient.Instance.Open();
+
+                    m_mainWindow.Title = m_mainWindow.Title + ":" + txtUserName.Text;
+                }
+                catch (System.Exception ex)
+                {
+                    PaintChat.App.StopServer();
+                    ChatServiceClient.Instance = null;
+                    MessageBox.Show(string.Format("Failed to connect to chat server, {0}", ex.Message), this.m_mainWindow.Title);
+                    return;
                 }
             }
+            if (ChatServiceClient.Instance.IsUserNameTaken(ChatServiceClient.Instance.ChatUser.NickName))
+            {
+                ChatServiceClient.Instance = null;
+                MessageBox.Show("Username is already in use");
+                return;
+            }
 
+            if (ChatServiceClient.Instance.Join() == false)
+            {
+                MessageBox.Show("Failed to join chat room");
+                ChatServiceClient.Instance = null;
+                PaintChat.App.StopServer();
+                return;
+            }
+            
+            this.m_mainWindow.ChatMode();
         }
-
-
-
-
-
-
-        private void buttonPanel_Click(object sender, RoutedEventArgs e)
+        
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            this.m_mainWindow.Close();
         }
+
     }
 }
